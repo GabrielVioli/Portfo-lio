@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Portfólio</title>
+<link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header class="header" role="banner">
+    <div class="container header-container">
+      <a href="#home" class="logo" aria-label="Gabriel Vinicius - Home">GV</a>
+      <nav class="nav" role="navigation" aria-label="Menu principal">
+        <button id="menu-toggle" aria-expanded="false" aria-controls="nav-menu" aria-label="Abrir menu">
+          <span class="hamburger"></span>
+        </button>
+        <ul id="nav-menu" class="nav-menu" hidden>
+          <li><a href="#home" tabindex="0">Início</a></li>
+          <li><a href="#about" tabindex="0">Sobre</a></li>
+          <li><a href="#projects" tabindex="0">Projetos</a></li>
+          <li><a href="#contact" tabindex="0">Contato</a></li>
+          <li>
+            <button id="dark-mode-toggle" aria-label="Alternar modo escuro">🌓</button>
+          </li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section id="home" class="hero" tabindex="0" aria-label="Seção inicial do site">
+      <div class="container">
+        <h1>Olá, eu sou <span class="highlight">Gabriel Vinicius</span></h1>
+        <p>Desenvolvedor de Software | Apaixonado por criar soluções inteligentes e eficientes.</p>
+        <a href="#projects" class="btn-primary" aria-label="Ver meus projetos">Ver Projetos</a>
+      </div>
+    </section>
+
+    <section id="about" class="about" tabindex="0" aria-label="Seção sobre Gabriel Vinicius">
+      <div class="container">
+    
+        <p>
+          Sou um desenvolvedor de software com experiência em C++, Java, Python e tecnologias web. 
+          Gosto de resolver problemas complexos e criar interfaces intuitivas.
+        </p>
+        <p>
+          Estou sempre aprendendo e buscando novas formas de melhorar meus projetos.
+        </p>
+      </div>
+    </section>
+
+    <section id="projects" class="projects" tabindex="0" aria-label="Seção de projetos">
+      <div class="container">
+        <h2>Meus Projetos</h2>
+        <div class="projects-grid" role="list">
+
+          <article class="project-card" role="listitem" tabindex="0">
+            <img src="img-book.jpg" alt="Biblioteca Virtual C++" loading="lazy" />
+            <div class="project-info">
+              <h3>Biblioteca Virtual C++</h3>
+              <p>Sistema de gerenciamento de biblioteca para controle eficiente de livros.</p>
+              <a href="https://github.com/seuusuario/biblioteca-virtual" target="_blank" rel="noopener" class="btn-secondary" aria-label="Ver Biblioteca Virtual no GitHub">Ver no GitHub</a>
+            </div>
+          </article>
+
+          <article class="project-card" role="listitem" tabindex="0">
+            <img src="img-make.png" alt="Automação de Make com VSCode" loading="lazy" />
+            <div class="project-info">
+              <h3>Automação de Make com VSCode</h3>
+              <p>Projeto C++ com Makefile para automação da compilação e execução.</p>
+              <a href="https://github.com/seuusuario/make-vscode" target="_blank" rel="noopener" class="btn-secondary" aria-label="Ver Automação de Make no GitHub">Ver no GitHub</a>
+            </div>
+          </article>
+
+          <article class="project-card" role="listitem" tabindex="0">
+            <img src="img-opencv.jpg" alt="Projeto OpenCV" loading="lazy" />
+            <div class="project-info">
+              <h3>Projeto OpenCV</h3>
+              <p>Projeto de visão computacional utilizando OpenCV e C++.</p>
+              <a href="https://github.com/seuusuario/opencv-projeto" target="_blank" rel="noopener" class="btn-secondary" aria-label="Ver Projeto OpenCV no GitHub">Ver no GitHub</a>
+            </div>
+          </article>
+
+        </div>
+      </div>
+    </section>
+
+    <section id="contact" class="contact" tabindex="0" aria-label="Seção de contato">
+      <div class="container">
+        <h2>Contato</h2>
+        <form id="contact-form" novalidate>
+          <label for="name">Nome</label>
+          <input type="text" id="name" name="name" required aria-required="true" placeholder="Seu nome" />
+
+          <label for="email">Email</label>
+          <input type="email" id="email" name="email" required aria-required="true" placeholder="seuemail@exemplo.com" />
+
+          <label for="message">Mensagem</label>
+          <textarea id="message" name="message" rows="5" required aria-required="true" placeholder="Digite sua mensagem"></textarea>
+
+          <button type="submit" class="btn-primary">Enviar</button>
+          <p id="form-message" aria-live="polite" role="alert" class="form-feedback"></p>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer" role="contentinfo">
+    <div class="container">
+      <p>© 2025 Gabriel Vinicius. Todos os direitos reservados.</p>
+      <p>Feito com ❤️ por Gabriel Vinicius</p>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
