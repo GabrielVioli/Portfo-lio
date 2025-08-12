@@ -38,7 +38,7 @@ header {
 }
 
 body.dark {
-  --bg: #cfe168;
+  --bg: #000000;
   --text: #eee;
   --primary: #3399ff;
   --primary-dark: #2176cc;
