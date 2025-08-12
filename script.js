@@ -15,6 +15,15 @@ menuToggle.addEventListener("click", () => {
   }
 });
 
+// Fecha o menu ao clicar em um item (responsivo para mobile)
+const navLinks = navMenu.querySelectorAll("a");
+navLinks.forEach(link => {
+  link.addEventListener("click", () => {
+    navMenu.setAttribute("hidden", "");
+    menuToggle.setAttribute("aria-expanded", "false");
+  });
+});
+
 // Dark mode toggle
 const darkToggle = document.getElementById("dark-mode-toggle");
 
