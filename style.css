@@ -325,7 +325,7 @@ section {
     width: 200px;
     padding: 1rem 0;
     border-radius: 0 0 0 10px;
-    display: none; /* Adicione esta linha */
+    display: none; /* menu começa escondido */
   }
 
   #menu-toggle {
@@ -333,10 +333,10 @@ section {
   }
 
   .nav-menu:not([hidden]) {
-    display: flex !important; /* Só mostra quando não está hidden */
+    display: flex !important; /* mostra quando não está hidden */
   }
 
   .nav-menu[hidden] {
-    display: none !important;
+    display: none !important; /* esconde quando está hidden */
   }
 }
