@@ -13,6 +13,17 @@ body {
   transition: background 0.3s, color 0.3s;
 }
 
+header {
+  position: fixed; 
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 1000; 
+  background-color: var(--primary-color);
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+
 :root {
   --bg: #f9f9f9;
   --text: #222;
